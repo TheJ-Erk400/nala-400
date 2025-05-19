@@ -1,10 +1,10 @@
 🚀 Nala: Your Friendly Package Manager Front-End! ✨
-
 Nala is a sleek, user-friendly front-end for libapt-pkg, built on the python-apt API. 🎉 Designed to make package management a breeze, Nala simplifies the often confusing output of apt, with clear formatting, colorful displays, and smarter workflows. Whether you're a newbie or a seasoned Linux user, Nala’s got your back! 🛠️
 📋 Table of Contents
 
 Overview
 Installation
+Usage
 Parallel Downloads
 Fetch
 History
@@ -28,6 +28,86 @@ Quick Start:
 Follow the wiki instructions to install Nala. 📦
 Run nala update to sync your package lists. 🔄
 Start managing packages like a pro! 🎮
+
+🎮 Usage
+Nala is packed with commands to simplify and supercharge your package management! 🚀 Below are the key ways to use Nala, with examples to get you started. All commands are designed to be intuitive, with clear, color-coded output to show exactly what’s happening. 🌈
+
+Update Package Lists 📋Refresh your system’s package lists to get the latest available packages:  
+nala update
+
+Pro Tip: Run this before installing or upgrading to ensure you’re working with the latest data. 🔄
+
+Install Packages 📦Install one or more packages with a clean, colorful summary:  
+nala install package-name
+
+Example:  
+nala install vim
+
+Nala will show which packages are being installed, upgraded, or removed, with color highlights (e.g., green for installs, red for removals). 🌟
+
+Remove Packages 🗑️Uninstall packages and see a clear breakdown of what’s being removed:  
+nala remove package-name
+
+Example:  
+nala remove vim
+
+Use --purge to also remove configuration files:  
+nala remove --purge vim
+
+
+Upgrade Packages ⬆️Upgrade all installed packages to their latest versions:  
+nala upgrade
+
+This command combines nala update and package upgrades, showing a color-coded list of what’s being updated. 🛠️
+
+Search for Packages 🔍Find packages in the repositories:  
+nala search package-name
+
+Example:  
+nala search python
+
+Nala displays results in a clean, readable format. 📜
+
+Show Package Details ℹ️Get detailed information about a package, including versions, dependencies, and more:  
+nala show package-name
+
+Example:  
+nala show apt
+
+Perfect for checking before installing! 👀
+
+Clean Up 🧹Remove cached package files to free up space:  
+nala clean
+
+Or remove all cached files, including those still needed:  
+nala clean --all
+
+
+Autoremove Unused Packages 🗑️Clean up unused dependencies left behind after package removals:  
+nala autoremove
+
+
+View Transaction History 🕰️Check your package management history:  
+nala history
+
+Undo or redo specific transactions:  
+nala history undo <ID>
+nala history redo <ID>
+
+Example:  
+nala history undo 5
+
+
+Optimize Mirrors 🌍Use nala fetch to find and configure the fastest mirrors (see Fetch for details):  
+nala fetch
+
+
+
+Quick Tips:
+
+Run nala --help to see all available commands and options. 📖
+Nala’s output is color-coded: green for installs, red for removals, yellow for upgrades, and more! 🌈
+Combine commands for efficiency, e.g., nala update && nala upgrade to refresh and upgrade in one go. ⚡
 
 ⚡ Parallel Downloads
 Say goodbye to slow downloads! 🏎️ Nala’s parallel downloads feature is a game-changer:
@@ -70,7 +150,17 @@ Note: Our GitHub and Debian Salsa repos are official mirrors, but GitLab is the 
 
 💖 Donations
 Love Nala? Support the project and keep the good vibes going! 🎁
-Donate at: [https://liberapay.com/Volian-Linux](https://liberapay.com/Volian
+Donate at: https://liberapay.com/Volian-Linux 💸
+📸 Screenshots
+See Nala in action! 🖼️
+
+Install in Progress
+Fetching Mirrors
+History Commands
+More Features
+
+
+⭐ Star this repo on GitLab to show your support! Let’s make package management awesome together! 🚀
 
 
 
