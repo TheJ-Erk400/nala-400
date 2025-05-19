@@ -1,3 +1,82 @@
+🚀 Nala: Your Friendly Package Manager Front-End! ✨
+
+Nala is a sleek, user-friendly front-end for libapt-pkg, built on the python-apt API. 🎉 Designed to make package management a breeze, Nala simplifies the often confusing output of apt, with clear formatting, colorful displays, and smarter workflows. Whether you're a newbie or a seasoned Linux user, Nala’s got your back! 🛠️
+📋 Table of Contents
+
+Overview
+Installation
+Parallel Downloads
+Fetch
+History
+Zsh/Fish Completions
+Bug Reports or Feature Requests
+Donations
+Screenshots
+
+📖 Overview
+Nala is here to make package management fun and intuitive! 😎 By interfacing with python-apt, Nala:
+
+Hides redundant apt messages 🧹
+Formats package info clearly 📊
+Uses color-coded outputs to show what’s happening during installs, removals, or upgrades 🌈
+
+Why Nala? It’s perfect for new users who find apt overwhelming and pros who want a faster, prettier workflow. 💻
+🛠️ Installation
+Get Nala up and running in no time! 🚀 Check out our Installation Wiki for detailed steps tailored to your system. 📚
+Quick Start:
+
+Follow the wiki instructions to install Nala. 📦
+Run nala update to sync your package lists. 🔄
+Start managing packages like a pro! 🎮
+
+⚡ Parallel Downloads
+Say goodbye to slow downloads! 🏎️ Nala’s parallel downloads feature is a game-changer:
+
+Downloads 3 packages at a time per unique mirror in your sources.list. 📥
+Alternates between mirrors to maximize speed. 🌐
+Skips failed mirrors and tries the next one automatically. 🔄
+
+Note: Nala handles downloading and verification independently of apt, ensuring a smoother experience. 🚀
+🌍 Fetch
+Meet nala fetch, your ticket to lightning-fast mirrors! ⚡
+
+Automatically detects if you’re on Debian, Ubuntu, or derivatives like Pop!_OS. 🖥️
+Fetches the full mirror list from your distro’s master repo. 📋
+Tests latency and scores mirrors to pick the fastest 3 (configurable). 🏆
+Writes the best mirrors to your sources.list. 📝
+
+Pro Tip: Run nala fetch to optimize your download speeds in seconds! ⏱️
+📜 History
+Track your package adventures with nala history! 🕰️
+
+Logs every install, remove, or upgrade in /var/lib/nala/history.json with a unique <ID>. 📂
+View a summary of all transactions with nala history. 📋
+Undo or redo actions with nala history undo <ID> or nala history redo <ID>. 🔄
+Clear specific entries with nala history clear <ID> or wipe everything with nala history clear --all. 🧹
+
+Inspired by dnf, Nala’s history feature keeps you in control! 🎮
+🐚 Zsh/Fish Completions
+Nala makes your shell experience silky smooth! 🐟
+
+Bash, Zsh, and Fish completions are powered by typer. 🛠️
+Just install Nala, restart your shell, and enjoy auto-completions with zero setup. ✨
+
+🐛 Bug Reports or Feature Requests
+Found a bug or have a brilliant idea? 💡 We’d love to hear from you!
+
+Official Repo: https://gitlab.com/volian/nala 🏠
+File bug reports or feature requests on GitLab. 📩
+Note: Our GitHub and Debian Salsa repos are official mirrors, but GitLab is the primary hub. 🔗
+
+💖 Donations
+Love Nala? Support the project and keep the good vibes going! 🎁
+Donate at: [https://liberapay.com/Volian-Linux](https://liberapay.com/Volian
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. image:: https://img.shields.io/discord/923757419253882920?color=5865F2&label=Discord&logo=discord&logoColor=FFFFFF&style=flat-square
 	:target: https://discord.gg/JEFpg73yr7
 	:alt: Discord
