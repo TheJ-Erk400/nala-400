@@ -323,7 +323,7 @@ Visit the [official repo](https://gitlab.com/volian/nala) for visuals. 🌟
 
 ---
 
-⭐ **Star us on GitLab** to support Nala and make package management awesome! 🚀
+⭐ **Star us on Github** to support Nala and make package management awesome! 🚀
 ````
 
 ---
